@@ -1,0 +1,295 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Big Data Developer Meetup</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<style type="text/css">
+			h1, h2 {
+				text-transform: none !important;
+			}
+			p.doge {
+				font-size: 32pt;
+				font-weight: bold;
+				font-family: 'Comic Sans MS', cursive, sans-serif;
+				padding-bottom: 2em;
+			}
+			div.footer {
+				position: relative;
+				bottom: -8em;
+				font-size: 10pt;
+			}
+			p.dark-shaddow, h2.dark-shaddow, ul.dark-shaddow {
+				text-shadow: 1px 1px 2px black, 0 0 1em black, 0 0 0.2em black;
+			}
+			p.light-shaddow, h2.light-shaddow {
+				text-shadow: 1px 1px 2px burlywood, 0 0 1em beige, 0 0 0.2em beige;
+			}
+		</style>
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Blockchain for business</h1>
+					<address>
+						James Taylor<br />
+						jamest@uk.ibm.com<br />
+						@jtonline
+					</address>
+				</section>
+
+				<section data-background="images/jronaldlee-coffee.jpg">
+					<p class="doge light-shaddow" style="text-align: right; padding-right: 4em; color: fuchsia">such crypto,</p>
+					<p class="doge light-shaddow" style="text-align: left; padding-left: 2em; color: yellow">so coin</p>
+					<p class="doge light-shaddow" style="padding-left: 2em; color: cyan">wow</p>
+					<div class="footer"><p>Photo © 2011 <a href="http://jronaldlee.com/">J. Ronald Lee</a></p></div>
+				</section>
+				
+				<section>
+					<section>
+						<ul>
+							<li>Blockchain for business</li>
+							<li>Vehicle lifecycle demo</li>
+							<li>Hyperledger projects</li>						
+							<li>Q&A</li>
+						</ul>
+					</section>
+					<section>
+						<p>Bonus: online tutorial</p>
+					</section>
+				</section>
+
+				<section data-background="images/sjcockell-network.png">
+					<section>
+						<h2 class="dark-shaddow">Business networks</h2>
+						<div class="footer"><p class="dark-shaddow">Photo © 2010 <a href="https://www.flickr.com/people/sjcockell/">Simon Cockell</a></p></div>		
+					</section>
+					
+					<section>
+						<ul class="dark-shaddow">
+							<li>Customers, suppliers, banks, partners...</li>
+							<li>Geographic and regulatory boundaries</li>
+						</ul>
+					</section>
+				</section>
+
+				<section data-background="images/Raymondo166-transporter.jpg">
+					<section>
+						<h2 class="dark-shaddow">Assets</h2>
+						<div class="footer"><p class="dark-shaddow">Photo © 2013 <a href="https://www.flickr.com/people/94418464@N08/">Ray Forster</a></p></div>
+					</section>
+					
+					<section>
+						<ul class="dark-shaddow">
+							<li>Tangible, e.g. car</li>
+							<li>Intangible, e.g. personal lease plan</li>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="images/aehdeschaine-ledgers.jpg">
+						<h2 class="dark-shaddow">Ledgers</h2>
+						<div class="footer"><p class="dark-shaddow">Photo © 2014 <a href="https://www.flickr.com/people/aehdeschaine/">aehdeschaine</a></p></div>
+					</section>
+
+					<section data-background="images/aehdeschaine-ledgers.jpg" data-background-repeat="repeat" data-background-size="100px">
+						<h2 class="dark-shaddow">Ledgers!</h2>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2>Vehicle Lifecycle Demo</h2>
+					</section>
+
+					<section data-background="images/alex.png" data-background-size="4em" data-background-position="top 2em center">
+						<h2>Alex</h2>
+						<p>Agency for Vehicle Standards</p>
+					</section>
+
+					<section data-background="images/paul.png" data-background-size="4em" data-background-position="top 2em center">
+						<h2>Paul</h2>
+						<p>Buyer/Owner</p>
+						<p><a href="http://localhost:8100/">Customer mobile app</a></p>
+					</section>
+
+					<section data-background="images/debbie.png" data-background-size="4em" data-background-position="top 2em center">
+						<h2>Debbie</h2>
+						<p>Vehicle & Drivers Authority (VDA)</p>
+						<p><a href="http://localhost:6001">VDA dashboard</a></p>
+					</section>
+
+					<section data-background="images/tommen.png" data-background-size="4em" data-background-position="top 2em center">
+						<h2>Tommen</h2>
+						<p>Insurer</p>
+						<p><a href="http://localhost:4200/">Prince Insurance dashboard</a></p>
+					</section>
+
+					<section data-background="images/mike.png" data-background-size="4em" data-background-position="top 2em center">
+						<h2>Mike</h2>
+						<p>Arium Logistics</p>
+						<p><a href="http://localhost:6002/">Arium manufacture dashboard</a></p>
+					</section>
+
+					<section data-background="images/vada.png" data-background-size="4em" data-background-position="top 2em center">
+						<h2>Vada</h2>
+						<p>Police</p>
+					</section>
+
+					<section>
+						<iframe width="560" height="315" src="https://www.youtube.com/embed/4pQAR3pFfgs?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+					</section>
+				</section>
+
+				<section>
+					<section data-background="images/logo_hl_new.png" data-background-size="auto">
+						<h2>'The' blockchain?</h2>
+						<ul>
+							<li>Hyperledger Fabric</li>
+						</ul>
+					</section>
+
+					<section data-background="images/logo_hl_new.png" data-background-size="auto">
+						<ul>
+							<li>Ledger</li>
+							<li>Smart contracts</li>
+							<li>Consensus</li>
+							<li>Confidentiality</li>
+						</ul>
+					</section>
+
+					<section data-background="images/fabric-architecture.png" data-background-size="100%">
+					</section>
+
+					<section data-background="images/logo_hl_new.png" data-background-size="auto">
+						<ul>
+							<li>Reflect business processes by specifying who endorses transactions</li>
+							<li>Modular architecture and flexible hosting options</li>
+						</ul>
+					</section>
+				</section>
+
+				<section data-background="images/logo_hl_new.png" data-background-size="auto">
+					<section>
+						<h2>Starring</h2>
+						<ul>
+							<li>Hyperledger Composer</li>
+						</ul>
+					</section>
+
+					<section>
+						<ul>
+							<li>Model business networks in domain specific language</li>
+							<li>Write Javascript transaction processor functions</li>
+							<li>Test!</li>
+							<li>Expose via APIs</li>
+						</ul>
+					</section>
+
+					<section>
+						<pre><code class="hljs" data-trim contenteditable>
+							asset Vehicle identified by vin {
+								o String vin
+								o VehicleDetails vehicleDetails
+								o VehicleStatus vehicleStatus
+								--> Person owner optional
+								o String numberPlate optional
+							}
+						</code></pre>
+					</section>
+					
+					<section>
+						<pre><code class="hljs" data-trim contenteditable>
+							transaction TransferVehicle {
+								--> Vehicle vehicle
+								--> Person seller
+								--> Person buyer
+								o String specialNotes optional
+							}
+						</code></pre>
+					</section>
+
+					<section>
+						<pre><code class="hljs" data-trim contenteditable>
+							/**
+							 * Transfer a vehicle to another owner
+							 * @param {org.example.vda.TransferVehicle} transferVehicle - the TransferVehicle transaction
+							 * @transaction
+							 */
+							function transferVehicle(transferVehicle) {
+								var currentParticipant = getCurrentParticipant();
+								
+								var vehicle = transferVehicle.vehicle;						
+								var seller = transferVehicle.seller;
+								var buyer = transferVehicle.buyer;
+
+								// ...
+				
+								vehicle.owner = buyer;
+												
+								return getAssetRegistry('org.example.vda.Vehicle')
+									.then(function(assetRegistry) {
+										return assetRegistry.update(vehicle);
+									});
+							}
+						</code></pre>
+					</section>
+				</section>
+
+				<section data-background="images/node-red.png" data-background-size="auto" data-background-position="center left 2em">
+					<h2>With</h2>
+					<ul>
+						<li>Node-RED</li>
+						<li>Watson IoT</li>
+					</ul>
+				</section>
+
+				<section>
+					<section>
+						<h2>Q&A</h2>
+					</section>
+
+					<section>
+						<h2>Composer Playground Tutorial</h2>
+						<p><a href="https://composer-playground.mybluemix.net/">https://composer-playground.mybluemix.net/</a></p>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
